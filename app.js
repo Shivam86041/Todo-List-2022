@@ -4,6 +4,7 @@ const todoscontainer = document.querySelector(".todos-container");
 textinputfield.addEventListener("keypress", (e)=>{
   if(e.key === "Enter"){
     if (textinputfield.value.trim().length == "") {
+      alert("Please write something in Text Field!!!")
       return;
     }
 //   create todocontainer class = todos-container
@@ -57,6 +58,7 @@ textinputfield.value = "";
 
 addbutton.addEventListener("click", () => {
   if (textinputfield.value.trim().length == "") {
+    alert("Please write something in Text Field!!!")
     return;
   }
 
